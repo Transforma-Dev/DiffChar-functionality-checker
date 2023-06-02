@@ -1,0 +1,33 @@
+.actualcontainer{
+    height: 90%;
+    width: 80%;
+    border: 1px solid black;
+}
+
+
+.main-container{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.left-panel{
+    height: 100vh;
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-panel{
+    height: 100vh;
+    width: 50%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

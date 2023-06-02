@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
 import './App.css';
+import Actual from './components/Actual';
+import Tex from '../src/sample.tex'
+import LeftPanel from './components/LeftPanel';
 
 function App() {
+const [text, setText] = useState('')
+  
+useEffect(() => {
+    fetch(Tex).then(res => res.text()).then(res => setText(res)).catch(err => console.error(err));
+},[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App show">
+      <p className='alert'>Please switch to landscape view</p>
+      <Actual text = {text}/>
+      {/* <LeftPanel data={text}/> */}
     </div>
   );
 }
 
-export default App;
+export default App
