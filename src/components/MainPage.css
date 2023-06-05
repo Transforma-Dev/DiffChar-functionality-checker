@@ -1,0 +1,16 @@
+.nav-bar{
+    height: 30px;
+    width: 100%;
+    display: flex;
+}
+
+.link-btn{
+    height: 30px;
+    width: 100%;
+    background-color: beige;
+}
+
+.link{
+    height: 30px;
+    width: 50%;
+}

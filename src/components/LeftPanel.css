@@ -1,39 +1,70 @@
-.left{
+.outer-container{
     height: 100vh;
-    width: 50%;
-    border: 1px solid black;
+    width: 100%;
+    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    overflow: scroll;
 }
-.main-outer{
-    height: 100vh;
+
+.header{
+    height: 23%;
+    width: 100%;
+    text-align: center;
+    position: inherit;
+}
+
+.textarea{ 
+    height: fit-content;
     width: 100%;
     display: flex;
-}
-.inner-actual{
-    height: 200px;
-    width: 80%;
-    border: 1px solid black;
-    margin: 5px;
-    overflow: scroll;
+    justify-content:center;
+    align-items: center;
 }
 
-.inner-change{
-    height: 200px;
-    width: 80%;
-    margin: 5px;
-    border: 1px solid black;
-    overflow: scroll;
-}
-
-.data-p{
-    overflow: scroll;
-}
-
-.inner-p{
-    height: 200px;
+.textbox{
+    height: 150px;
     width: 100%;
-    word-wrap: break-word;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.textbox > .textarea1,.textarea2{
+    height: 100%;
+    width: 95%;
+}
+
+.method-section{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin-top: 20px;
+}
+
+.method-section > .method,.timeset{
+    height: 100px;
+    width: 30%;
+}
+
+.timeset{
+    padding: 30px;
+}
+
+.output-section{
+    height: fit-content;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.output-container{
+    height: fit-content;
+    width: 55%;
+}
+
+.diff-btn{
+    width: 75%;
 }
