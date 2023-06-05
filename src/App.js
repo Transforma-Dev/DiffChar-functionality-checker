@@ -19,10 +19,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route
-          path="/DiffChar-functionality-checker"
-          element={<LeftPanel data={text} />}
-        />
+        <Route path="/" element={<LeftPanel data={text} />} />
         <Route path="diff2" element={<Actual text={text} />} />
       </Routes>
     </>

@@ -11,7 +11,7 @@ const MainPage = () => {
         </Link>
       </div>
       <div className="link">
-        <Link to="/DiffChar-functionality-checker" className="link-btn">
+        <Link to="/" className="link-btn">
           <button className="link-btn">Diff,Match and Patch</button>
         </Link>
       </div>
