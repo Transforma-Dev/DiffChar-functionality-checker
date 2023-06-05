@@ -67,4 +67,5 @@
 
 .diff-btn{
     width: 75%;
+    overflow-wrap: break-word;
 }
